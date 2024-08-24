@@ -1,3 +1,11 @@
+import { MText } from "@/components";
+
 export default function Home() {
-  return <div>hello world</div>;
+  return (
+    <main>
+      <MText as="h1" weight="extrabold" size="4xl" textAlign="center">
+        hello world
+      </MText>
+    </main>
+  );
 }
