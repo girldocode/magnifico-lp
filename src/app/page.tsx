@@ -1,12 +1,12 @@
-import { Button, MText } from "@/components";
+import { MText } from "@/components";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-blue-gray-900">
       <MText as="h1" weight="extrabold" size="4xl" textAlign="center">
         hello world
       </MText>
-      <Button
+      {/* <Button
         color="white"
         variant="sm"
         weight="semibold"
@@ -14,8 +14,8 @@ export default function Home() {
         textAlign="center"
       >
         Sign Up Free
-      </Button>
-      <Button
+      </Button> */}
+      {/* <Button
         color="white"
         variant="lg"
         weight="bold"
@@ -23,7 +23,25 @@ export default function Home() {
         textAlign="center"
       >
         Sign Up Free
-      </Button>
+      </Button> */}
+      {/* <InlineButton
+        color="blue-600"
+        variant="blue"
+        weight="medium"
+        size="base"
+        textAlign="center"
+      >
+        See how it helped others
+      </InlineButton> */}
+      {/* <InlineButton
+        color="white"
+        variant="white"
+        weight="medium"
+        size="base"
+        textAlign="center"
+      >
+        Improve workflow
+      </InlineButton> */}
     </main>
   );
 }
