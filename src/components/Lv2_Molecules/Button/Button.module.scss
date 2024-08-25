@@ -1,0 +1,69 @@
+.btn {
+  border-radius: 8px;
+  color: white;
+  background: #2563eb;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+
+  &--sm {
+    padding: 0.813rem;
+    padding-left: 1.75rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    gap: 6px;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url("/assets/svgviewer-output\(09\).svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 8px;
+      transition: transform 0.3s;
+    }
+  }
+
+  &--lg {
+    padding: 1.25rem 1.5rem;
+    padding-left: 2.5rem;
+    max-width: 263px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url("/assets/svgviewer-output\(09\).svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 8px;
+      transition: transform 0.3s;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+
+  &.block {
+    display: block !important;
+  }
+
+  &.circular {
+    border-radius: 50em !important;
+  }
+}

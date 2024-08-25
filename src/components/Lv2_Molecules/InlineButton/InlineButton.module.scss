@@ -1,0 +1,60 @@
+.btn {
+  background: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+
+  &--blue {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url("/assets//svgviewer-output\(10\).svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 1rem;
+      transition: transform 0.3s;
+    }
+  }
+
+  &--white {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url("/assets/svgviewer-output\(09\).svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 1rem;
+      transition: transform 0.3s;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+
+  &.block {
+    display: block !important;
+  }
+
+  &.circular {
+    border-radius: 50em !important;
+  }
+}
